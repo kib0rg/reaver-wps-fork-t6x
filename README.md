@@ -1,4 +1,4 @@
 #Attention
-	beginning of portability
+	Start of portability in order to leave the reav running on other platforms such as OpenWRT, wifipineapple etc.
 
-	many things to do
+	Many things to be done

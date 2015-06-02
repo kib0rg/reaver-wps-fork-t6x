@@ -322,6 +322,13 @@ static int wps_process_serial_number(struct wps_device_data *dev,
 		exit(0);
 	}		
 
+	if(globule->op_gen_pin == 3)
+	{
+		printf("[Pin Gen] Zyxel Default Pin Generator\n");
+		printf("[Pin Gen] Pin Generated : %08d\n",pingen_zyxel(mac2str(get_bssid(),'\0'), str, str_len, 0));
+		exit(0);
+	}
+
     os_free(dev->serial_number);
     dev->serial_number = os_malloc(str_len + 1);
     if (dev->serial_number == NULL)

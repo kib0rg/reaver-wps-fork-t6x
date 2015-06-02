@@ -570,3 +570,17 @@ int pingen_dlink(char *mac, char *serial, int len_serial, int add)
 
     return (pin * 10) + wps_checksum(pin);
 }
+
+
+int pingen_zyxel(char *mac)
+{
+    int pin;
+
+    char mac_address[7] = {0};
+ 
+    sprintf(mac_address, "%c%c%c%c%c%c", mac[6], mac[7], mac[8], mac[9], mac[10], mac[11]);
+
+    pin = hexToInt(mac_address) % 10000000;
+
+    return (pin * 10) + wps_pin_checksum(pin);
+}

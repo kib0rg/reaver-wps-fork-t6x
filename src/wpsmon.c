@@ -573,7 +573,7 @@ void usage(char *prog)
     fprintf(stderr, "\t-5, --5ghz                           Use 5GHz 802.11 channels\n");
     fprintf(stderr, "\t-s, --scan                           Use scan mode\n");
     fprintf(stderr, "\t-u, --survey                         Use survey mode [default]\n");
-    fprintf(stderr, "\t-P, --output-piped              Allows Wash output to be piped. Example. wash x|y|z...\n");
+    fprintf(stderr, "\t-P, --output-piped                   Allows Wash output to be piped. Example. wash x|y|z...\n");
     fprintf(stderr, "\t-g, --get-chipset                    Pipes output and runs reaver alongside to get chipset\n");
     fprintf(stderr, "\t-h, --help                           Show help\n");
 
